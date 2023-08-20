@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    display: flex;
+    background-color: #FEFCF3;
+    width: 100vw;
+    height: 100vh;
+}
+.sideProfile{
+    width: 30vw;
+    height:100vh;
+    
+    text-align: center;
+    background-image: url("res/photo-1553748024-d1b27fb3f960.jpg");
+    background-position: center center;
+}
+.avatar{
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+    padding:50px;
+}
+.userName, .career, li, p{
+    width: 100%;
+    color:white;
+    padding:10px;
+    text-shadow:1px 1px 2px black;
+    font-weight: bold;
+
+}
+.userName{
+    font-size: 32px;
+    text-decoration: none;
+}
+.info{
+    width: 100%;
+    height: 30%;
+    text-align: left;
+    padding-top: 100px;
+    margin-left: 50px;
+    list-style-type: none;
+}
+i{
+    padding-right:15px;
+}
+.career{
+    padding:40px 0;
+    font-size: 38px;
+}
+.copyright{
+    padding-top: 65px !important;
+}
+.contentWrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.topnav{
+    overflow: hidden;
+    width: 70vw;
+    height:10vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top:25px;
+}
+.topnav a {
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 38px;
+    
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    
+    color: #F0DBDB;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    
+    color: #DBA39A;
+  }
