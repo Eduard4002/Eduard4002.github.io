@@ -1,6 +1,4 @@
-main h1{
-    font-size: 75px ;
-}
+
 .socials{
     width: 100%;
     display: grid;
@@ -25,6 +23,9 @@ a{
 .socials div:nth-of-type(3){
     fill : #6441A4;
 }
+.socials div svg{
+    transition: 0.3s;
+}
 .socials div svg:hover{
-    height: 6.25em;
+    transform: scale(1.1);
 }

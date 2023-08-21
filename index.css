@@ -94,8 +94,15 @@ i{
     flex-grow: 1; /* Allow the main section to grow and take up remaining space */
     margin: 30px; /* Add some spacing to the main content */
     background-color: white; /* Adjust background color as needed */
+  }
+  main h3{
     text-align: center;
+
   }
   main h1{
-    font-size: 100px;
+    font-size: 50px;
+  }
+  main .title{
+    text-align: none;
+    margin: 50px 100px;
   }
