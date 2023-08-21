@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="index.css">   
+    <link rel="stylesheet" href="contact.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="res/fontawesome-free-6.4.2-web/css/all.css">
+   </head>
+<body>
+   <div class = "sideProfile">
+      <img src="res/channels4_profile.jpg" alt = "Avatar" class = "avatar">
+      <a  class = "userName" href = "">@Eduard4002</a>
+      <h1 class = "career">Game Developer</h1>
+
+      <ul class = "info">
+         <li><i class="fa-solid fa-location-dot"></i>Sweden</li>
+         <li><i class="fa-solid fa-link"></i>LinkToOnlinePage</li>
+      </ul>
+      
+      <p class = "copyright"><i class="fa-regular fa-copyright"></i>2023 Eduard "All Rights Reserved"</p>
+      
+   </div>
+   <div class = "contentWrapper">
+      <div class="topnav">
+         <a href="index.html">About</a>
+         <a href="projects.html">Projects</a>
+         <a href="social.html">Social</a>
+         <a class="active" href="contact.html">Contact</a>
+         <a>O</a>
+       </div>
+   
+   
+       <main>
+         <h1 class = "title">Contact</h1>
+         <form method="POST" action="email.php">
+             <div class="side">
+                <div class="name">
+                    <label for="Name" class="label">Your name</label>
+                    <input type="text"  name="Name" required>
+                </div>
+                <div class="mail">
+                    <label for="Mail" class="label">Your mail</label>
+                    <input type="text" name="Mail" required>
+                </div>
+                <div class="submit">
+                    <button type="submit" name="Contact">SUBMIT</button>
+                </div>  
+             </div>
+            <div class="message">
+                <label for="Message" class="label">Your message</label>
+                <textarea name="Message" rows="30" cols="50" placeholder="Enter here..." required></textarea>
+            </div>
+            
+         </form>
+       </main>
+   </div>
+   
+</body>
+</html>

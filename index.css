@@ -15,6 +15,7 @@ body{
     text-align: center;
     background-image: url("res/photo-1553748024-d1b27fb3f960.jpg");
     background-position: center center;
+    background-size: cover;
 }
 .avatar{
     display: block;
@@ -52,7 +53,10 @@ i{
     font-size: 38px;
 }
 .copyright{
-    padding-top: 65px !important;
+  max-width: fit-content;
+    position:absolute;
+    bottom:20px;
+    left:40px;
 }
 .contentWrapper {
     flex: 1;
