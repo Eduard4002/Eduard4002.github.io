@@ -73,6 +73,7 @@ i{
     align-items: center;
     padding-top:25px;
 }
+
 .topnav a {
     color: black;
     text-align: center;
@@ -81,6 +82,10 @@ i{
     font-size: 38px;
     
   }
+.topnav .mode-toggle{
+  font-size:large;
+  cursor: pointer;
+}
   
   /* Change the color of links on hover */
   .topnav a:hover {
@@ -97,7 +102,8 @@ i{
   main{
     flex-grow: 1; /* Allow the main section to grow and take up remaining space */
     margin: 30px; /* Add some spacing to the main content */
-    background-color: white; /* Adjust background color as needed */
+    
+    
   }
   main h3{
     text-align: center;
@@ -109,4 +115,11 @@ i{
   main .title{
     text-align: none;
     margin: 50px 100px;
+  }
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+  .dark-mode .topnav a{
+    color:white;
   }
