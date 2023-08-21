@@ -1,13 +1,26 @@
+:root {
+  --font-color: black;
+  --bg-color: rgb(233, 233, 233);
+  --h-color:#F0DBDB;
+  --a-color:#DBA39A;
+}
+[data-theme='dark']{
+  --font-color: white;
+  --bg-color: rgb(20, 20, 20);
+  --h-color:#F0DBDB;
+  --a-color:#DBA39A;
+}
 *{
     margin:0;
     padding:0;
 }
 body{
     display: flex;
-    background-color: #FEFCF3;
+    background-color: var(--bg-color);
     width: 100vw;
     height: 100vh;
 }
+
 .sideProfile{
     width: 30vw;
     height:100vh;
@@ -75,7 +88,7 @@ i{
 }
 
 .topnav a {
-    color: black;
+    color: var(--font-color);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -85,25 +98,26 @@ i{
 .topnav .mode-toggle{
   font-size:large;
   cursor: pointer;
+  color:var(--font-color);
 }
   
   /* Change the color of links on hover */
   .topnav a:hover {
     
-    color: #F0DBDB;
+    color: var(--h-color);
   }
   
   /* Add a color to the active/current link */
   .topnav a.active {
     
-    color: #DBA39A;
+    color: var(--a-color);
   }
 
   main{
     flex-grow: 1; /* Allow the main section to grow and take up remaining space */
     margin: 30px; /* Add some spacing to the main content */
     
-    
+    color:var(--font-color);
   }
   main h3{
     text-align: center;
@@ -116,10 +130,15 @@ i{
     text-align: none;
     margin: 50px 100px;
   }
-  .dark-mode {
-    background-color: black;
-    color: white;
+ 
+/*
+  .light-mode{
+    background-color: white;
   }
-  .dark-mode .topnav a{
-    color:white;
+
+  .light-mode .topnav a{
+    color:black;
   }
+  .light-mode .topnav .mode-toggle{
+    color:black;
+  }*/
