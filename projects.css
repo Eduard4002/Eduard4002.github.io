@@ -39,3 +39,19 @@ div{
     box-shadow:var(--b-shadow-color);
     border:1px solid rgb(0, 0, 0, 0);
 }
+@media only screen and (max-width: 1200px){
+    .projects{
+        column-count: 1;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .projects{
+        column-count: 2;
+    }
+}
+@media only screen and (max-width: 876px){
+    .projects{
+        column-count: 1;
+    }
+}
+

@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="res/fontawesome-free-6.4.2-web/css/all.css">
    </head>
 <body>
+   <input type="checkbox" id="profileToggle" class="hidden">
+   <label for="profileToggle" class="hamburger-toggle"><i class="fas fa-bars fa-2x"></i></label>
    <div class = "sideProfile">
       <img src="res/channels4_profile.jpg" alt = "Avatar" class = "avatar">
       <a  class = "userName" href = "">@Eduard4002</a>
@@ -23,7 +25,7 @@
       
    </div>
    <div class = "contentWrapper">
-      <div class="topnav">
+      <div class="topnav dark-shadow">
          <a href="index.html">About</a>
          <a href="projects.html">Projects</a>
          <a href="social.html">Social</a>
@@ -34,24 +36,25 @@
    
        <main>
          <h1 class = "title">Contact</h1>
-         <form method="POST" action="test.php">
-             <div class="side">
+         <form action="https://formspree.io/eduard_m_business@gmail.com">
+             
                 <div class="name">
                     <label for="Name" class="label">Your name</label>
-                    <input type="text"  name="Name" required>
+                    <input type="text"  name="name" required>
                 </div>
                 <div class="mail">
                     <label for="Mail" class="label">Your mail</label>
-                    <input type="text" name="Mail" required>
+                    <input type="text" name="_replyto" required>
                 </div>
-                <div class="submit">
-                    <button type="submit" name="Contact">SUBMIT</button>
-                </div>  
-             </div>
+                
+             
             <div class="message">
                 <label for="Message" class="label">Your message</label>
                 <textarea name="Message" rows="30" cols="50" placeholder="Enter here..." required></textarea>
             </div>
+            <div class="submit">
+               <button type="submit" name="Contact" value="Send">SUBMIT</button>
+           </div>  
             
          </form>
        </main>

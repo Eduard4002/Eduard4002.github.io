@@ -37,8 +37,10 @@ body{
     background-image: url("res/photo-1553748024-d1b27fb3f960.jpg");
     background-position: center center;
     background-size: cover;
+
     transition: 0.4ms ease-in-out;
 }
+
 .avatar{
     display: block;
     width: 200px;
@@ -87,7 +89,6 @@ i{
     overflow: hidden;
 }
 .topnav{
-    overflow: hidden;
     width: 70vw;
     height:10vh;
     display:flex;
@@ -123,8 +124,9 @@ i{
   }
 
   main{
+    width: 90%;
     flex-grow: 1; /* Allow the main section to grow and take up remaining space */
-    margin: 30px; /* Add some spacing to the main content */
+    margin: auto; /* Add some spacing to the main content */
     
     color:var(--font-color);
   }
@@ -210,7 +212,7 @@ i{
   width: 100vw;
   height: 100vh;
   background-color: var(--bg-color);
-
+  z-index: 1000;
   overflow-y: auto;
 }
 
@@ -236,13 +238,26 @@ i{
   padding: 5px;
 }
 #profileToggle:checked ~.contentWrapper > .topnav {
-  margin:auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: 30px; /* Add spacing from the career text */
   z-index: 1000;
-  height: 50vh;
+  height: 35vh;
+  width: 100vw;
+  color:white;
+  position: absolute;
+  bottom:150px;
+  margin:auto;
+
+} 
+#profileToggle:checked ~.contentWrapper > .topnav a{
+  color:white;
+  transition:0.4s ease-in-out;
+}
+#profileToggle:checked ~.contentWrapper > .topnav > .active{
+  transform: scale(1.8);
+}
+#profileToggle:checked ~.hamburger-toggle{
   color:white;
 }

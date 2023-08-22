@@ -1,19 +1,24 @@
 main form{
-    height:50%;
+    height:70%;
     width: 100%;
     text-align: left;
+    overflow-y: scroll;
+    overflow-x:visible;
 }
-.side{
+.name, .mail , .submit,.message{
     display: inline-block;
-    margin-left: 100px;
-    width: 30%;
+    width: 45%;
+    margin-left: 25px;
+    margin-bottom: 40px;
 }
-.mail{
-    margin-top: 75px;
+.submit{
+    display: block;
+
+    margin:50px auto;
 }
+
 .message{
-    margin-right: 100px;
-    float:right;
+    width: 92.5%;
 }
 main label{
     font-size: 32px;
@@ -27,8 +32,6 @@ input, textarea, button{
     transition: 0.4s ease-in-out;
     border-radius: 5px;
     outline:none;
-    margin-top: 15px;
-    padding-left: 5px;
 }
 input{
     width:80%;
@@ -38,7 +41,7 @@ input{
 }
 button{
     height: 75px;
-    margin-top:150px;
+    
     font-size: 32px;
     cursor: pointer;
 
@@ -61,4 +64,14 @@ textarea{
     box-shadow:var(--b-shadow-color);
     border:1px solid rgb(0, 0, 0, 0);
     transform:scale(1.03);
+}
+@media only screen and (max-width: 1200px){
+    .name, .mail , .submit{
+        display: block;
+        margin:20px auto;
+    }
+    .name, .mail , .submit{
+        display: block;
+        margin:20px auto;
+    }
 }

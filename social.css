@@ -3,6 +3,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap:50px;
     margin-top: 50px;
 }
 .socials div{
@@ -29,4 +30,10 @@ a{
 }
 .socials div svg:hover{
     transform: scale(1.1);
+}
+
+@media only screen and (max-width: 876px){
+    .socials{
+        grid-template-columns: 1fr 1fr;
+    }
 }
