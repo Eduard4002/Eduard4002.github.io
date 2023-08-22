@@ -18,9 +18,9 @@ div{
     cursor:pointer;
     transition: 0.4s ease-in-out;
     transform:scale(1);
-    border: 1px solid rgb(0,0,0,0.08);
+    border: var(--b-border-color);
     box-shadow: 0px 0px 0px rgb(0,0,0,0);
-
+    color:var(--font-color);
     margin-top:50px;
 }
 .project-name{
@@ -31,11 +31,11 @@ div{
 }
 .project-about{
     margin:15px 20px;
-    font-size:24px;
+    font-size:20px;
 }
 
 .project-item:hover{
     transform:scale(1.05);
-    box-shadow:0px 15px 35px rgb(0, 0, 0, 0.06);
+    box-shadow:var(--b-shadow-color);
     border:1px solid rgb(0, 0, 0, 0);
 }

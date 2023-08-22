@@ -2,7 +2,7 @@
 .socials{
     width: 100%;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-top: 50px;
 }
 .socials div{
@@ -17,11 +17,12 @@ a{
     padding-top:75px;
 
 }
+
 .socials div:nth-of-type(1) {
-    fill: #ff0000; /* Set the desired fill color for the first SVG */
+    fill: #ff0000; /* youtube */
 }
 .socials div:nth-of-type(3){
-    fill : #6441A4;
+    fill : #6441A4; /*twitch*/
 }
 .socials div svg{
     transition: 0.3s;

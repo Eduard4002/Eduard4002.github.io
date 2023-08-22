@@ -1,14 +1,21 @@
-:root {
-  --font-color: black;
-  --bg-color: rgb(233, 233, 233);
-  --h-color:#F0DBDB;
-  --a-color:#DBA39A;
-}
+
 [data-theme='dark']{
   --font-color: white;
   --bg-color: rgb(20, 20, 20);
   --h-color:#F0DBDB;
   --a-color:#DBA39A;
+  --b-shadow-color: 0px 15px 35px rgba(255, 255, 255, 0.06);
+  --b-border-color:1px solid rgba(90, 90, 90, 0.8);
+}
+[data-theme='light'] {
+  --bg-color: white;
+  --font-color: black;
+  --h-color:#F0DBDB;
+  --a-color:#DBA39A;
+  --b-shadow-color:0px 15px 35px rgba(0, 0, 0, 0.06);
+  --b-border-color:1px solid rgba(0, 0, 0, 0.8);
+
+
 }
 *{
     margin:0;
@@ -19,6 +26,7 @@ body{
     background-color: var(--bg-color);
     width: 100vw;
     height: 100vh;
+    font-family: 'Raleway', sans-serif;
 }
 
 .sideProfile{
@@ -29,6 +37,7 @@ body{
     background-image: url("res/photo-1553748024-d1b27fb3f960.jpg");
     background-position: center center;
     background-size: cover;
+    transition: 0.4ms ease-in-out;
 }
 .avatar{
     display: block;
@@ -119,10 +128,8 @@ i{
     
     color:var(--font-color);
   }
-  main h3{
-    text-align: center;
-
-  }
+  
+    
   main h1{
     font-size: 50px;
   }
@@ -130,15 +137,112 @@ i{
     text-align: none;
     margin: 50px 100px;
   }
- 
-/*
-  .light-mode{
-    background-color: white;
+  .hidden {
+    display: none;
   }
+  /* Corrected CSS for hamburger toggle */
+.hamburger-toggle {
+  color: var(--font-color);
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1001; /* Ensure the hamburger toggle appears above the side profile */
+}
 
-  .light-mode .topnav a{
-    color:black;
+/*RESPONSIVE DESIGN */
+ 
+/* Add media queries for breakpoints */
+@media only screen and (max-width: 1200px) {
+  /* Decrease font size for smaller screens */
+  body {
+    font-size: 16px;
   }
-  .light-mode .topnav .mode-toggle{
-    color:black;
-  }*/
+  main h1 {
+    font-size: 36px; /* Decrease heading font size */
+  }
+  main h3 {
+    font-size: 14px; /* Decrease paragraph font size */
+  }
+  .topnav a{
+    font-size:24px;
+  }
+  
+}
+
+@media (max-width: 1024px) {
+  /* Hide side profile and show toggle button */
+  .sideProfile {
+    display: none;
+  }
+  .contentWrapper {
+    padding-top: 60px; /* Add padding for toggle button */
+  }
+  .topnav {
+    position: relative; /* Position toggle button */
+  }
+  .hamburger-toggle {
+    display: block;
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  /* Reposition navigation below career class */
+  main {
+    margin: 30px 30px 0; /* Adjust top margin */
+  }
+  /* Hide navigation */
+  .topnav {
+    display: none;
+  }
+  
+}
+
+
+
+/* Additional styles for side profile toggle */
+#profileToggle:checked ~ .sideProfile {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-color);
+
+  overflow-y: auto;
+}
+
+#profileToggle:checked ~  .sideProfile .info {
+  display: none; /* Hide the info list */
+}
+/* New CSS for avatar container */
+#profileToggle:checked ~  .sideProfile .avatar-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* New CSS for avatar and user info */
+#profileToggle:checked ~  .sideProfile .avatar-container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+#profileToggle:checked ~  .sideProfile .userName,
+#profileToggle:checked ~ .sideProfile .career {
+  font-size: 24px;
+  padding: 5px;
+}
+#profileToggle:checked ~.contentWrapper > .topnav {
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px; /* Add spacing from the career text */
+  z-index: 1000;
+  height: 50vh;
+  color:white;
+}

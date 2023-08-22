@@ -54,11 +54,11 @@ textarea{
 
 .name , .mail, .message{
     border-radius: 10px;
-    border: 1px solid rgb(0,0,0,0.08);
+    border: var(--b-border-color);
 }
 
 .name:hover, .mail:hover, .message:hover, button:hover{
-    box-shadow:0px 15px 35px rgb(0, 0, 0, 0.06);
+    box-shadow:var(--b-shadow-color);
     border:1px solid rgb(0, 0, 0, 0);
     transform:scale(1.03);
 }
