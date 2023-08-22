@@ -49,7 +49,7 @@ body{
     margin: auto;
     padding:50px;
 }
-.userName, .career, li, p{
+.userName, .career, .sideProfile li,.sideProfile p{
     width: 100%;
     color:white;
     padding:10px;
@@ -61,14 +61,7 @@ body{
     font-size: 32px;
     text-decoration: none;
 }
-.info{
-    width: 100%;
-    height: 30%;
-    text-align: left;
-    padding-top: 100px;
-    margin-left: 50px;
-    list-style-type: none;
-}
+
 i{
     padding-right:15px;
 }
@@ -216,9 +209,6 @@ i{
   overflow-y: auto;
 }
 
-#profileToggle:checked ~  .sideProfile .info {
-  display: none; /* Hide the info list */
-}
 /* New CSS for avatar container */
 #profileToggle:checked ~  .sideProfile .avatar-container {
   text-align: center;

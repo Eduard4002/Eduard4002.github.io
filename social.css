@@ -6,29 +6,32 @@
     gap:50px;
     margin-top: 50px;
 }
-.socials div{
+.socials a{
     height: 100%;
-    width: 125px;
+    width: 50%;
+    margin:auto;
+    text-decoration: none;
+}
+.socials p{
+    font-size: 32px;
+    width: fit-content;
+    display: block;
+    margin:20px auto;
+    color:var(--font-color);
+    text-decoration: none;
+}
+.socials img{
+    width: 80%;
+    transition: 0.3s;
+    display: block;
+    padding:0;
     margin:auto;
 }
-a{
-    font-size: 32px;
-}
-.socials .secondRow{
-    padding-top:75px;
-
+#discord{
+    margin-top: 55px;
 }
 
-.socials div:nth-of-type(1) {
-    fill: #ff0000; /* youtube */
-}
-.socials div:nth-of-type(3){
-    fill : #6441A4; /*twitch*/
-}
-.socials div svg{
-    transition: 0.3s;
-}
-.socials div svg:hover{
+.socials a img:hover{
     transform: scale(1.1);
 }
 
