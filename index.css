@@ -122,6 +122,9 @@ i{
     margin: auto; /* Add some spacing to the main content */
     
     color:var(--font-color);
+    overflow-y:auto;
+    overflow-x:hidden;
+    padding-bottom:30px;
   }
   
     
