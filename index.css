@@ -124,6 +124,9 @@ i{
     padding-bottom: 20px;
     overflow-y: scroll;
     color:var(--font-color);
+    overflow-y:auto;
+    overflow-x:hidden;
+    padding-bottom:30px;
   }
   
     
