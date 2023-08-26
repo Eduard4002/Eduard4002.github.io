@@ -39,6 +39,7 @@ body{
     background-size: cover;
 
     transition: 0.4ms ease-in-out;
+    overflow-y: scroll;
 }
 
 .avatar{
@@ -120,7 +121,8 @@ i{
     width: 90%;
     flex-grow: 1; /* Allow the main section to grow and take up remaining space */
     margin: auto; /* Add some spacing to the main content */
-    
+    padding-bottom: 20px;
+    overflow-y: scroll;
     color:var(--font-color);
   }
   
@@ -162,7 +164,15 @@ i{
   .topnav a{
     font-size:24px;
   }
-  
+  .copyright{
+    font-size: 0.8em;
+  }
+  .career{
+    font-size:32px;
+  }
+  .userName{
+    font-size:24px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -236,9 +246,9 @@ i{
   height: 35vh;
   width: 100vw;
   color:white;
-  position: absolute;
-  bottom:150px;
-  margin:auto;
+  position:absolute;
+  bottom:100px;
+  
 
 } 
 #profileToggle:checked ~.contentWrapper > .topnav a{
